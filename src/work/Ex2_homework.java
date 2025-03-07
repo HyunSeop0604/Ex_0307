@@ -2,7 +2,9 @@ package work;
 
 import java.util.Random;
 
-public class Ex2_homework {
+public class Ex2_homework 
+{
+	//★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
     public static void main(String[] args) 
     {
         int[] lotto = new int[6];
@@ -23,7 +25,7 @@ public class Ex2_homework {
         }//outer
         
         //오름차순
-        for(int i = 0 ;i<lotto.length; i++)
+        for(int i = 0; i < lotto.length; i++)
         {
         	for(int j=i+1; j < lotto.length;j++)
         	{
@@ -32,8 +34,11 @@ public class Ex2_homework {
         			int temp = lotto[i];
         			lotto[i]=lotto[j];
         			lotto[j]=temp;
+        			
         		}//if
+        		
         	}//inner
+        	
         }//outer
         
         for(int arr : lotto) 
